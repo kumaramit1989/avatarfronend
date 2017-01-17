@@ -1,0 +1,306 @@
+.navbar
+{
+	background-color: #808000;
+	border-color: #008000;
+}
+
+.carousel-inner .item > img,
+.carousel-inner .item > a > img
+{
+	height: 300px;
+	margin: auto;
+}
+
+.navbar-brand
+{
+	 color: #ffffff;
+	 font-weight: bold;
+}
+#foot
+{
+	color: #ffffff;
+	padding-top: 12px;
+}
+
+.dropdown-menu {
+	background-color: #808000;
+}
+  
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+    background-color: #808000;
+}
+  
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus 
+{
+    color: #ffffff;
+    background-color: #808000;
+}
+  
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #008000;
+}
+
+/* For dropdown toggle button background color*/
+.open .dropdown-toggle {
+	background:#008000 !important;
+	color:#ffffff !important;
+}
+
+.dropdown:not(.open) > .dropdown-toggle:focus:not(:hover) {
+  background-color: #008000;
+}
+
+.input-group-addon
+{
+	background-color:#808000;
+}
+
+/* For navbar toggle button */
+.navbar-inverse .navbar-toggle {
+  border-color: #008000;
+}
+
+/* For navbar toggle button */
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #808000;
+}
+
+.navbar-inverse .navbar-toggle:focus:not(:hover) {
+  background-color: #808000;
+}
+
+/* For active tab */
+.active a{
+    background-color: #808000 !important;
+}
+
+/* Social media icons hover */
+i
+{
+	color: #ffffff;
+}
+
+/* Social media icons hover */
+i:hover
+{
+	color: #0000FF;
+}
+
+/*#copyright
+{
+	padding-top: 12px;
+	color: #ffffff;
+}*/
+
+/* For modal form scrolling */
+.modal {
+	overflow: auto;
+}
+
+/* For modal form header */
+.modal-header, h1{
+    background-color: #808000;
+    color:white !important;
+    text-align: center;
+}
+
+/* For cross button in modal form */
+.close{
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+  
+.modal-footer {
+    background-color: #f9f9f9;
+}
+
+.radio {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.center-block {
+	margin-top: 85px;
+  	margin-bottom: 0px;
+}
+
+.head li a {
+	color: #808000;
+}
+
+.head li a:hover {
+	background-color: #008000;
+	color: #ffffff;
+}
+
+/* For logo in the header */
+.headlogo
+{
+	margin-left: -20px;
+	height: 100px;
+	width: 100%;
+	display: block;
+	max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* For back to top button */
+.back-to-top {
+	margin: 0px;
+	height: 55px;
+	width: 55px;
+	z-index: 100;
+	position: fixed;
+	display: none;
+	text-decoration: none;
+	background: none;
+	color: #ffffff;
+	background-color: #808000;
+	bottom: 150px;
+	right: 0px;
+}
+
+/* For back to top button icon */
+.back-to-top i {
+	padding-left: 3px;
+	padding-top: 1px;
+}
+
+/* For readonly field in admin form */
+.disabledfield {
+	 cursor: not-allowed
+}
+
+/* For jumbotron in admin form */
+.jumbotron {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  color: inherit;
+  background-color: #F0F0F0;
+}
+
+/* For optional part in product admin form */
+.optionaljumbotron {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	color: inherit;
+	background-color: #00FF00;
+}
+
+/* for pagination styling */
+.pagination > li > a,
+.pagination > li > span {
+  color: #008000;
+  border: 1px solid #008000;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  border-color: #008000;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  border-color: #008000;
+}
+
+#selectdemo {
+	width: auto;
+	height: auto;
+}
+
+/* For images in grid */
+.img-responsive {
+	height: 150px;
+	width: 150px;
+    margin: 0 auto;
+    display: block;
+  	max-width: 100%;
+}
+
+/* For products in grid */
+.panel-primary {
+  border-color: #008000;
+}
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #808000;
+  border-color: #008000;
+}
+
+/* To break to second line for small devices also */
+/* @media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    since 3.1.0
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+} */
+/* To break to second line for small devices also END*/
+
+.img-responsive-selected {
+	/* padding-left: 70px;
+	padding-right: 70px; */
+	height: 250px;
+	width: 250px;
+    margin: 0 auto;
+    display: block;
+  	max-width: 100%;
+}
+
+.img-responsive-about {
+	height: 200px;
+	width: 300px;
+    margin: 0 auto;
+    display: block;
+  	max-width: 100%;
+}

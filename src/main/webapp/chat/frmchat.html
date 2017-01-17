@@ -1,0 +1,31 @@
+
+	<div ng-controller="ChatController" class="container">
+	<div id="loginbox" style="margin-top: 50px;"class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="panel-title">Chat Room</div>
+					<div
+						style="float: right; font-size: 80%; position: relative; top: -10px">
+					</div>
+				</div>
+	
+		<form ng-submit="addMessage()" name="messageForm">
+			Message :<input type="text" class="form-control control-label" size="80" ng-model="message" /><br/>
+<!-- 			<input type="text" placeholder="Compose a new message..." -->
+<!-- 				ng-model="message" /> <br /> -->
+			<br />
+			<div class="info">
+				<span class="count" ng-bind="max - message.length"
+					ng-class="{danger: message.length > max}">140</span>
+				<button ng-disabled="message.length > max || message.length === 0">Send</button>
+			</div>
+		</form>
+		<hr />
+		
+		<p ng-repeat="message in messages | orderBy:'time':true"
+			class="message">{{currentUser.useremail}}  &nbsp&nbsp<time>{{message.time | date:'HH:mm'}}</time>
+        &nbsp&nbsp &nbsp&nbsp <span ng-class="{self: message.self}">{{message.message}}</span>
+		</p>
+	</div>
+</div>
+</div>

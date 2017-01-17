@@ -1,0 +1,9 @@
+
+	<div ng-controller="HomeController as ctrl">
+		<div ng-show="currentUser.useremail!==undefined">
+			<div class="nav navbar-nav navbar-left">Welcome User
+				{{currentUser.fstanme}} - {{currentUser.useremail}}</div>
+			<div class="nav navbar-nav navbar-right">You Logged in as :
+				{{currentUser.currentrole}}</div>
+		</div>
+	</div>

@@ -1,0 +1,37 @@
+
+	<div class="container" ng-controller="BulletinController as ctrl">
+	
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="panel-title">BroadCast Bulletin</div>
+					<div
+						style="float: right; font-size: 80%; position: relative; top: -10px">
+					</div>
+				</div>
+	
+		<form class="form-horizontal" name="myForm" role="form" ng-submit="ctrl.submit()">
+			<div class="form-group" ng-class="{'has-error': form.bulsubject.$dirty && form.bulsubject.$error.required}">
+			<br><br><br/>
+				<label for="bulsubject" class="col-sm-3 control-label">Bulletin Title :</label>
+				<div class="col-sm-6">
+					<input type="text" name="bulsubject" id="bulsubject" class="form-control" ng-model="ctrl.bulletin.bulsubject" required/>
+					<span ng-show="form.bulsubject.$dirty && form.bulsubject.$error.required" class="help-block"></span>
+				</div>
+			</div>
+			<div class="form-group" ng-class="{'has-error': form.buldescription.$dirty && form.buldescription.$error.required}">
+				<label for="buldescription" class="col-sm-3 control-label">Description :</label>
+				<div class="col-sm-6">
+					<textarea rows="5" cols="80" id="buldescription" name="buldescription" class="form-control" ng-model="ctrl.bulletin.buldescription" required></textarea>
+					<span ng-show="form.buldescription.$dirty && form.buldescription.$error.required" class="help-block"></span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-6">
+					<button type="submit" ng-disabled="form$invalid || ctrl.dataLoading" class="btn btn-info">Save Bulletin?</button>
+					<button type="reset" class="btn btn-danger" ng-click="ctrl.reset()" >Clear</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	</div>

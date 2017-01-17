@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top headroom">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+
+
+				<a class="navbar-brand" href="index.html"><img
+					src="resources/assets/images/clog.png"  height="50"  width="150"
+					alt="Letz Chat HTML5 template"></a>
+
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="#">HOME</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">USER<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#/usertype">USER TYPE</a></li>
+						<li><a href="#/userrole">USER ROLE</a></li>
+						<li><a href="#/listusersadmin">APPROVE USER</a></li>
+					</ul>
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">BLOGS<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/viewblogs">VIEW</a></li>
+							<li><a href="#/approveblogs">APPROVE</a></li>
+						</ul></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">FORUMS<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/viewforums">VIEW</a></li>
+							<li><a href="#/approveforums">APPROVE</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">BULLETINS<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/addbulletin">ADD NEW</a></li>
+							<li><a href="#/viewbulletin">LIST</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">EVENTS<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/addevent">ADD</a></li>
+							<li><a href="#/viewevents">LIST</a></li>
+						</ul>
+					</li>
+					<!-- <li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">JOBS<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/addjob">ADD JOBS</a></li>
+							<li><a href="#/viewjobs">LIST JOBS</a></li>
+							<li><a href="#/viewappliedjobs">LIST APPLIED JOBS</a></li>
+						</ul>
+					</li> -->
+					<li><a ng-hide="currentUser.useremail==undefined"
+						href="#/home" ng-click="ctrl.logoutuser()">LOGOUT</a></li>
+					<li style="font-weight: bold; color: white;"
+						ng-show="currentUser.useremail!==undefined">
+ 						<br/><br/>Welcome {{currentUser.useremail}}<!-- : {{currentUser.currentrole}} -->
+<!-- 	<br/><br/>Welcome {{currentUser.fstname}} : {{currentUser.useidentity}} -->
+</li>
+</ul>
+			</div>
+		
+		</div>
+	</div>
+	
+</body>
+</html>
